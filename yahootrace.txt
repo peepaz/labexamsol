@@ -1,0 +1,4 @@
+traceroute to yahoo.com (98.138.219.231), 64 hops max
+  1   10.0.2.2  0.005ms  0.005ms  0.004ms 
+  2   *  *  * 
+  3   * 

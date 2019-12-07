@@ -1,0 +1,21 @@
+alias psg="ps aux"
+alias please="sudo"
+alias myip="curl http://ipecho.net/plain;echo"
+alias dusage="df-Tha--total"
+
+numfiles(){
+	N="$(ls $1 | wc -l)";
+	echo "$N files in $1";
+}
+
+mkcd() { mkdir -p $1; cd $1; }
+
+function preman(){
+	man -t $@ | open -f -a "Preview";
+}
+alias submit="zip $USER-submission $HOME/submissions | sudo mv $USER-submission.zip /home/admin/submissions"
+
+$HOME/labexam/functions.sh
+
+merge(){ echo "" > file3; cat "$1" >> file3; cat "$2" >> file3; }
+
